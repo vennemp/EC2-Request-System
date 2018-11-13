@@ -12,3 +12,5 @@ Side Note: My customer uses AWS and Office 365, no plans for Azure as of yet. He
 
 The benefit here is that you can enforce approvals, transparency (who requested and approved what), configuration management (Security Groups, IAM Roles, Instance Size, User Data, AMIs) etc.
 
+Once you write your PS Script, you will have to deploy with PowerShell Core and new AWS Lambda module. https://aws.amazon.com/blogs/developer/announcing-lambda-support-for-powershell-core/
+
