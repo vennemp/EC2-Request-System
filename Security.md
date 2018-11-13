@@ -44,7 +44,7 @@ Go to Cloud Watch logs for your Lambda function.  Find an entry that looks like 
         "x-ms-workflow-version": "08586595368134558043"
     ```
     
-    Find the entry User-Agent.  copy everything up to the ; (everything before version).  This is the specific workflow user agent - essentially the dedicated unique browser session of that workflow.
+    Find the entry User-Agent.  copy everything up to the ; (everything before version).  This is the specific workflow user agent - essentially the dedicated unique browser session of that workflow. You can in theory add more rules (IP Restrictions, other headers etc).
     
     Create a WAF and create a rule that only allows requests with the headers that contains that user agent.
     Apply the firewall to your stage. Disable lambda proxy integration, re-enter your body mapping templates.
