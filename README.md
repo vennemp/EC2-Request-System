@@ -7,6 +7,7 @@ Here is the process flow:
 1. Approval Workflow - Microsoft Flow.  The request is sent to a stake holder to approve.
 1. Once approved, a dynamic HTTP request is sent to API Gateway, which parses the body of the HTTP POST request.
 1. Lambda takes the HTTP Body and kicks off a function written in PowerShell Core. 
+1. If Lambda/API Gateway are too much of a security risk (even with WAF), check out PoSHServer, http://www.poshserver.net/. Creates a web service for Powershell!
 
 Side Note: My customer uses AWS and Office 365, no plans for Azure as of yet. Hence why this solution was written for AWS. 
 
