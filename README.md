@@ -15,3 +15,4 @@ The benefit here is that you can enforce approvals, transparency (who requested 
 
 Once you write your PS Script, you will have to deploy with PowerShell Core and new AWS Lambda module. https://aws.amazon.com/blogs/developer/announcing-lambda-support-for-powershell-core/
 
+Coming soon! How to integrate with full CI/CD using CodePipeline.
