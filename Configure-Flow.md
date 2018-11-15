@@ -6,6 +6,6 @@
 1. Select POST
 1. In "Body", put the request in JSON format
 Values with underscores around are the names of the dynamic content value.  If you are select a non-text field (Choice etc, make sure you select the column name Value from Dynamic Content.
-{"Title": "_Title_","Application":"_Application Value_","Env":"_Env Value_","Type":"_InstanceType_"}.
+{"Title": "_Title_","Application":"_Application Value_","Env":"_Env Value_","Type":"_InstanceType Value_"}.
 
 Keys are the values you put in LambdaInput and Body mapping template.  Values are column names from SPO List.
