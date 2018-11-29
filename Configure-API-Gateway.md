@@ -1,3 +1,5 @@
+This next session assumes you are using MS Flow and Office 365 as the service making the web service call.  If you are using on-prem SharePoint or another application/service inside your VPC you can always do a private VPC Endpoint for API Gateway.  
+
 ### Configuring API Gateway
 
 1. Create your resource in API Gateway. (essentially just the path in your parent URL string)
