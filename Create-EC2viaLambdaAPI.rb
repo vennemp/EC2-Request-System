@@ -18,7 +18,8 @@ end
 image = ec2.images({filters: [{name: "name", values: ["CFPB_Windows_2012R2_Standard_Image"]}]})
 inst_imageid = image.first.id
 
-inst_userdata = "PHBvd2Vyc2hlbGw+Ck5ldy1JdGVtIC1QYXRoIGM6XGJvb3RzdHJhcCAtSXRlbVR5cGUgZGlyZWN0b3J5CkdldC1TM09iamVjdCAtQnVja2V0TmFtZSBjZnBiLWJvb3RzdHJhcCAtS2V5UHJlZml4IGJvb3RzdHJhcCB8IENvcHktUzNPYmplY3QgLUJ1Y2tldE5hbWUgY2ZwYi1ib290c3RyYXAgLWxvY2FsZm9sZGVyIGM6XGJvb3RzdHJhcCAtU2VydmVyU2lkZUVuY3J5cHRpb25DdXN0b21lclByb3ZpZGVkS2V5IDVWRDA2WGFaQnVocG1wQUNhZ01mY1E5WWtUSml4ejFUYzc3Q0dYRzNWVEk9IC1TZXJ2ZXJTaWRlRW5jcnlwdGlvbkN1c3RvbWVyTWV0aG9kIGFlczI1NgpzZXQtbG9jYXRpb24gYzpcYm9vdHN0cmFwCi4vYm9vdHN0cmFwLWF3cy13aW5kb3dzLnBzMQo8L3Bvd2Vyc2hlbGw+"
+#make sure user data is base64 encoded... you can do this in the script with the base64 sdk...
+inst_userdata = "BASE64GOBBLEDYGOOK"
 
 instance = ec2.create_instances({
   image_id: inst_imageid,
